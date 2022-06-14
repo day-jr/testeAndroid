@@ -1,7 +1,11 @@
 <resources>
     <string name="app_name">IPretty</string>
     <string name="entity_name">Category creation</string>
+    <string name="initialScreenTopText">IPretty Main Menu</string>
     <string name="send">send</string>
     <string name="type_text">Type Text</string>
+    <string name="button_category_post">create new category</string>
+    <string name="button_category_get">search category</string>
+    <string name="button_category_get_nearby">find nearby</string>
 
 </resources>

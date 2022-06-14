@@ -20,12 +20,12 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/entityName"
+            android:id="@+id/initalScreenTopLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
-            android:text="@string/entity_name"
+            android:text="@string/initialScreenTopText"
             android:textColor="@android:color/background_light"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -37,33 +37,52 @@
     </LinearLayout>
 
 
-
-    <EditText
-        android:id="@+id/attribute_1"
+    <Button
+        android:id="@+id/category_menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:gravity="center"
-        android:hint="@string/type_text"
-        android:inputType="text"
-        android:minHeight="48dp"
-        android:textColorHint="#757575"
-        app:layout_constraintBottom_toTopOf="@+id/button_send"
+        android:layout_marginBottom="75dp"
+        android:text="Categories"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/button_send2" />
 
     <Button
-        android:id="@+id/button_send"
+        android:id="@+id/button_send2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="20dp"
         android:text="@string/send"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/attribute_1"
-        app:layout_constraintStart_toStartOf="@+id/attribute_1" />
+        app:layout_constraintBottom_toTopOf="@+id/category_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_send3" />
+
+    <Button
+        android:id="@+id/button_send3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/send"
+        app:layout_constraintBottom_toTopOf="@+id/button_send2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_send4" />
+
+    <Button
+        android:id="@+id/button_send4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/send"
+        app:layout_constraintBottom_toTopOf="@+id/button_send3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
