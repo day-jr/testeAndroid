@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">IPretty</string>
+    <string name="entity_name">Category creation</string>
+    <string name="send">send</string>
+    <string name="type_text">Type Text</string>
+
+</resources>
