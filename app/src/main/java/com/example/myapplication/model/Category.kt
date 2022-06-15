@@ -4,7 +4,13 @@ import com.google.gson.Gson
 
 
 class Category {
+
+    private var idCategory = ""
     private var name = ""
+    private var imageUrl = null
+    private var ownerCategory = null
+    private var childrenCategories = null
+
 
     public fun getName(): String {
         return this.name

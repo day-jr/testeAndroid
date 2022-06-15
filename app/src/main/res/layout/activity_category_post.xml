@@ -64,4 +64,16 @@
         app:layout_constraintEnd_toEndOf="@+id/attribute_1"
         app:layout_constraintStart_toStartOf="@+id/attribute_1" />
 
+    <TextView
+        android:id="@+id/post_category_confirmation_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="26dp"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
