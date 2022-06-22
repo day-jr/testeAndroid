@@ -6,14 +6,278 @@
     android:layout_height="match_parent"
     tools:context=".services.category.CategoryGetActivity">
 
-    <TextView
-        android:id="@+id/CategoriesTextView"
+    <!-- Main Container -->
+    <RelativeLayout
+        android:id="@+id/search_with"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.246"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.108" />
+        android:background="@drawable/search_container_background"
+        tools:ignore="MissingConstraints">
+
+        <!-- search bar container-->
+        <RelativeLayout
+            android:id="@+id/search_bar_container"
+            android:layout_width="294dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp">
+
+
+            <!-- Search icon -->
+            <ImageView
+                android:id="@+id/barDivider11"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:background="?actionBarDivider" />
+
+            <RelativeLayout
+                android:id="@+id/search"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="7dp"
+                android:background="@drawable/ic_search" />
+
+
+            <!-- schedule -->
+            <RelativeLayout
+                android:id="@+id/data_do_age"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:background="@drawable/ic_data_do_agendamento"
+                android:translationX="255dp" />
+
+            <!-- text input -->
+            <TextView
+                android:id="@+id/o_que_vc_pr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="7dp"
+
+
+                android:layout_toEndOf="@+id/search"
+                android:lineSpacingExtra="4sp"
+                android:text="@string/o_que_vc_pr"
+                android:textAppearance="@style/o_que_vc_pr" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/itens"
+            android:layout_width="294dp"
+            android:layout_height="280dp"
+            android:layout_below="@+id/search_bar_container"
+            android:layout_alignStart="@+id/search_bar_container"
+            android:layout_alignEnd="@+id/search_bar_container"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="0dp">
+
+
+            <!-- Barbeiro -->
+
+            <RelativeLayout
+                android:id="@+id/barbeiro"
+                android:layout_width="293dp"
+                android:layout_height="28dp">
+
+                <ImageView
+                    android:id="@+id/barDivider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="0dp"
+                    android:background="?actionBarDivider" />
+
+                <RelativeLayout
+                    android:id="@+id/barbeiro_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_barbeiro" />
+            </RelativeLayout><!-- barbeiro-->
+
+            <!-- cabeleireiro -->
+            <RelativeLayout
+                android:id="@+id/cabeleireiro"
+                android:layout_width="293dp"
+                android:layout_height="28dp"
+                android:layout_below="@+id/barbeiro"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/barDivider2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="0dp"
+                    android:background="?actionBarDivider" />
+
+                <RelativeLayout
+                    android:id="@+id/cabeleireiro_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_cabeleireiro" />
+            </RelativeLayout><!-- cabeleireiro -->
+
+
+            <!-- maos -->
+            <RelativeLayout
+                android:id="@+id/maos"
+                android:layout_width="293dp"
+                android:layout_height="28dp"
+                android:layout_below="@+id/cabeleireiro"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/barDivider3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="0dp"
+                    android:background="?actionBarDivider" />
+
+                <RelativeLayout
+                    android:id="@+id/maos_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_maos" />
+            </RelativeLayout><!-- maos -->
+
+
+            <!-- maquiagem -->
+            <RelativeLayout
+                android:id="@+id/maquiagem"
+                android:layout_width="293dp"
+                android:layout_height="28dp"
+                android:layout_below="@id/maos"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/barDivider4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="0dp"
+                    android:background="?actionBarDivider" />
+
+                <RelativeLayout
+                    android:id="@+id/maquiagem_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_maquiagem" />
+            </RelativeLayout><!-- maquiagem -->
+
+
+            <!-- pes -->
+            <RelativeLayout
+                android:id="@+id/pes"
+                android:layout_width="293dp"
+                android:layout_height="28dp"
+                android:layout_below="@id/maquiagem"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/barDivider5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="0dp"
+                    android:background="?actionBarDivider" />
+
+                <RelativeLayout
+                    android:id="@+id/pes_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_pes" />
+            </RelativeLayout><!-- pes -->
+
+
+            <!-- sobrancelha -->
+            <RelativeLayout
+                android:id="@+id/sobrancelha"
+                android:layout_width="293dp"
+                android:layout_height="28dp"
+                android:layout_below="@id/pes"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/barDivider6"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="0dp"
+                    android:background="?actionBarDivider" />
+
+                <RelativeLayout
+                    android:id="@+id/sobrancelha_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_sobrancelha" />
+            </RelativeLayout><!-- sobrancelha -->
+
+
+            <!-- spa -->
+            <RelativeLayout
+                android:id="@+id/spa"
+                android:layout_width="293dp"
+                android:layout_height="28dp"
+                android:layout_below="@id/sobrancelha"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/barDivider7"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="0dp"
+                    android:background="?actionBarDivider" />
+
+                <RelativeLayout
+                    android:id="@+id/spa_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_spa" />
+            </RelativeLayout><!-- spa -->
+
+
+            <!-- massagem -->
+            <RelativeLayout
+                android:id="@+id/massagem"
+                android:layout_width="293dp"
+                android:layout_height="28dp"
+                android:layout_below="@id/spa"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/barDivider8"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="0dp"
+                    android:background="?actionBarDivider" />
+
+                <RelativeLayout
+                    android:id="@+id/massagem_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_massagem" />
+            </RelativeLayout><!-- massagem -->
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!-- top bar -->
+
+
+    <!-- Item list -->
+    <!-- item list-->
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

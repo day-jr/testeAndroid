@@ -35,4 +35,16 @@ class HttpHelper {
 
         return ObjectMapper().readValue(responseBody, CategoryResponseBody::class.java)
     }
+
+    fun getNearby(path: String, long:Float, lat:Float, radius:Float): CategoryResponseBody {
+
+        //TODO flexibilizar o retorno dessas funções (fazer um get pra cada entidade é inviável)
+        val URL = "${apiUrl}${path}?latitude=${lat}&longitude=${long}&radius"
+        val client = OkHttpClient()
+        val request = Request.Builder().url(URL).build()
+        val response =  client.newCall(request).execute()
+        val responseBody = response.body()?.string()
+
+        return ObjectMapper().readValue(responseBody, CategoryResponseBody::class.java)
+    }
 }

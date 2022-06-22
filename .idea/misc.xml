@@ -4,13 +4,31 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.101" />
+        <entry key="app/src/main/res/drawable/ic_barbeiro.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_cabeleireiro.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_data_do_agendamento.xml" value="0.2015" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.101" />
+        <entry key="app/src/main/res/drawable/ic_line_70.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_maos.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_maquiagem.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_massagem.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_pes.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_search.xml" value="0.129" />
+        <entry key="app/src/main/res/drawable/ic_sobrancelha.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_spa.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/search.xml" value="0.107" />
+        <entry key="app/src/main/res/drawable/searchBackground.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/search_container_background.xml" value="0.1" />
         <entry key="app/src/main/res/layout-v28/activity_main.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_category_get.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_category_get.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_category_get_nearby.xml" value="0.17864583333333334" />
         <entry key="app/src/main/res/layout/activity_category_menu.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_category_post.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_professional_category_get.xml" value="0.15462962962962962" />
+        <entry key="app/src/main/res/layout/activity_professional_category_menu.xml" value="0.15462962962962962" />
+        <entry key="app/src/main/res/layout/activity_professional_category_post.xml" value="0.15462962962962962" />
+        <entry key="app/src/main/res/layout/barbeiro.xml" value="0.25" />
         <entry key="app/src/main/res/layout/category_activity_post.xml" value="0.19375" />
         <entry key="app/src/main/res/xml/network_security_config.xml" value="0.19270833333333334" />
       </map>

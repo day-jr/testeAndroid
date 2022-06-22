@@ -8,4 +8,7 @@
     <string name="button_category_get">search category</string>
     <string name="button_category_get_nearby">find nearby</string>
 
+    <!-- Category search bar-->
+    <string name="o_que_vc_pr">O que vc procura?</string>
+
 </resources>

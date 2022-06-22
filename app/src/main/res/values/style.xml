@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Category Search Bar -->
+    <style name="o_que_vc_pr">
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textColor">#B0B7C3</item>
+    </style>
+
+    <style name="itens">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#4E5D78</item>
+    </style>
+
+</resources>
