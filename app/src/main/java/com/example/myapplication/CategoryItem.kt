@@ -23,6 +23,7 @@ class CategoryItem : Fragment() {
 
 
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -43,6 +44,7 @@ class CategoryItem : Fragment() {
 
         categoryNameTextView.setText(categoryName)
         return inflatedFragment
+
     }
 
     companion object {
@@ -58,5 +60,9 @@ class CategoryItem : Fragment() {
             }
 
         }
+
+
     }
+
+
 }
