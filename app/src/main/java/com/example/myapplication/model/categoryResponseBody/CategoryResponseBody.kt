@@ -1,7 +1,9 @@
 package com.example.myapplication.model.categoryResponseBody
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import com.fasterxml.jackson.annotation.JsonProperty
 
+//@JsonIgnoreProperties(ignoreUnknown = true)
 data class CategoryResponseBody(
      @JsonProperty("content") val content: List<Content>,
      @JsonProperty("empty") val empty: Boolean,

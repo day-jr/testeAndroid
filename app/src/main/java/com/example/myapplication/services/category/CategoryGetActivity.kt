@@ -13,10 +13,10 @@ class CategoryGetActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_category_get)
+        setContentView(R.layout.test)
         val path = "categories"
         val http = HttpHelper()
-        val categoriesTextView = findViewById<TextView>(R.id.CategoriesTextView)
+        val categoriesTextView = findViewById<TextView>(R.id.textView)
 
         CoroutineScope(Dispatchers.IO).launch {
             val promise = async {http.get(path)}
@@ -24,11 +24,13 @@ class CategoryGetActivity : AppCompatActivity() {
 
             categoryListConcatenated = ""
             for(category in response.content){
-                categoryListConcatenated+= category
+                categoryListConcatenated+= category.name
             }
 
             withContext(Dispatchers.Main){
                 response.let {
+
+
                     categoriesTextView.text = categoryListConcatenated
                 }
 
