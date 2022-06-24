@@ -10,7 +10,6 @@ import okhttp3.RequestBody
 
 class HttpHelper {
     fun post(json: String, path: String):  Int {
-        //val URL = "http://dev.ipretty.com.br:8081"
 
         val URL = "${apiUrl}${path}"
 
